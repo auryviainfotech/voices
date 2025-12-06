@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --magenta-primary: #d946ef;
+  --violet-secondary: #7c3aed;
+  --magenta-violet-gradient: linear-gradient(135deg, #d946ef 0%, #7c3aed 100%);
+  --magenta-violet-gradient-hover: linear-gradient(135deg, #c026d3 0%, #6d28d9 100%);
+  --accent: #f0abfc;
+  --accent-light: #fae8ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --magenta-primary: #e879f9;
+    --violet-secondary: #8b5cf6;
+    --magenta-violet-gradient: linear-gradient(135deg, #e879f9 0%, #8b5cf6 100%);
+    --magenta-violet-gradient-hover: linear-gradient(135deg, #f0abfc 0%, #a78bfa 100%);
+    --accent: #9333ea;
+    --accent-light: #581c87;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+.gradient-text {
+  background: var(--magenta-violet-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: var(--magenta-violet-gradient);
+}
+
+.gradient-bg-hover {
+  background: var(--magenta-violet-gradient-hover);
+}
+
+.border-gradient {
+  background: var(--magenta-violet-gradient);
+  padding: 1px;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+/* Popup Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.4s ease-out;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}

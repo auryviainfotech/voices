@@ -1,0 +1,83 @@
+/* Parallax Scrolling Effects */
+.parallax-layer {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Parallax scroll effect - different speeds for different layers */
+.parallax-slow {
+  transform: translateY(calc(var(--scroll-y) * 0.1px));
+}
+
+.parallax-medium {
+  transform: translateY(calc(var(--scroll-y) * 0.3px));
+}
+
+.parallax-fast {
+  transform: translateY(calc(var(--scroll-y) * 0.5px));
+}
+
+/* Floating animation for parallax elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-30px) translateX(5px);
+  }
+}
+
+.parallax-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Parallax background layers */
+.parallax-bg-1 {
+  transform: translateY(calc(var(--scroll-y) * 0.2px));
+}
+
+.parallax-bg-2 {
+  transform: translateY(calc(var(--scroll-y) * 0.4px));
+}
+
+.parallax-bg-3 {
+  transform: translateY(calc(var(--scroll-y) * 0.6px));
+}
+
+/* Scroll-based opacity */
+.parallax-fade {
+  opacity: calc(1 - var(--scroll-y) * 0.001);
+}
+
+/* Parallax scale effect */
+.parallax-scale {
+  transform: scale(calc(1 + var(--scroll-y) * 0.0005));
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for better parallax experience */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #7c3aed, #db2777);
+}
