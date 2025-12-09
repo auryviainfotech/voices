@@ -147,7 +147,7 @@ export default function Home() {
                         </div>
                         <div className="space-y-4 text-center grow flex flex-col justify-center">
                           <p className="font-body text-gray-700 leading-relaxed text-lg">
-                            A New Healthcare Magazine Started in 2025
+                            A New Healthcare Magazine Started in 2026
                          </p>
                           <p className="font-body text-purple-600 font-medium text-lg">
                             Where Healthcare Meets Innovation, Community & Inspiration
