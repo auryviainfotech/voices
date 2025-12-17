@@ -569,7 +569,7 @@ export default function Home() {
 
               {/* Title */}
               <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-                January 2025 Edition
+                January 2026 Edition
               </h2>
               
               {/* Subtitle */}

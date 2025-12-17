@@ -139,7 +139,7 @@ export default function MagazinePage() {
               </div>
               <div className="text-center sm:text-left">
                 <p className="text-xs sm:text-sm text-purple-200 mb-1 font-medium uppercase tracking-wide">New Release</p>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">January 2025 Edition</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">January 2026 Edition</h2>
                 <p className="text-sm sm:text-base text-purple-100">Coming Soon - Be the First to Read!</p>
               </div>
             </div>
